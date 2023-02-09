@@ -2,6 +2,8 @@
 
 Minimal docker image with [OpenSSL 3.0](https://www.openssl.org/blog/blog/2021/09/07/OpenSSL3.Final).
 
+**Note:** As OpenSSL 3 is now standard on most (all?) modern Linux distributions, this repository has been marked as read-only and will no longer maintained.
+
 # Why
 
 Useful for testing OpenSSL commands when you need to be at the forefront, without having to touch your own system, potentially wreaking havoc in the process. 
@@ -27,15 +29,6 @@ Now you can test your new shiny OpenSSL installation:
 ```
 > openssl version
 OpenSSL 3.0.5 5 Jul 2022 (Library: OpenSSL 3.0.5 5 Jul 2022)
-```
-
-Pull From DockerHub
-===================
-
-You can also pull a [pre-built image directly from DockerHub](https://hub.docker.com/repository/docker/realiserad/openssl3).
-```
-docker pull realiserad/openssl3
-docker run -it realiserad/openssl3 /bin/sh
 ```
 
 Use With Docker Compose
